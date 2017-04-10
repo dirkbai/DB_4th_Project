@@ -1,0 +1,50 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #384047;
+}
+
+/* Search Form*/
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #444;
+  color: white;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  transition: background-color 2s;
+  }
+
+  input:focus {
+    border: solid 3px orange;
+    color: black;
+    background-color: white;
+  }
+
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder,
+  textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+  input:focus::-moz-placeholder,
+  textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+  input:focus:-ms-input-placeholder,
+  textarea:focus::-moz-placeholder { color:transparent; }
+
+
+
+@media (min-width: 768px) {
+
+
+};
