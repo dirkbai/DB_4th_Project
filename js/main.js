@@ -32,10 +32,8 @@ $('.Photos_wrapper').magnificPopup({
 						var captionUp = captions.toUpperCase();
             if (captionUp.search(filter) < 0) {
                 $(this).hide(600);
-
             } else {
                 $(this).show(600);
-                //count++;
             }
         });
     });
