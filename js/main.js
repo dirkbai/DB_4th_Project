@@ -15,7 +15,7 @@ $('.Photos_wrapper').magnificPopup({
 		},
 		zoom: {
 			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
+			duration: 300,
 			opener: function(element) {
 				return element.find('img');
 			}
@@ -25,21 +25,18 @@ $('.Photos_wrapper').magnificPopup({
 
 	$(document).ready(function(){
     $("#Search").keyup(function(){
-			var filter = $(this).val();
+			var seek = $(this).val();
+			var filter = seek.toUpperCase();
 			    $(".Photos_wrapper a").each(function(){
-				// If the list item does not contain the text phrase fade it out
-            if ($(this).attr('title').search(filter) < 0) {
+						var captions = $(this).attr('title');
+						var captionUp = captions.toUpperCase();
+            if (captionUp.search(filter) < 0) {
                 $(this).hide(600);
 
-            // Show the list item if the phrase matches and increase the count by 1
             } else {
                 $(this).show(600);
                 //count++;
             }
         });
-
-        // Update the count
-        //var numberItems = count;
-        //$("#filter-count").text("Number of Comments = "+count);
     });
 });

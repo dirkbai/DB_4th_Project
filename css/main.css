@@ -68,11 +68,33 @@ input {
         max-width: 600px;
         margin: auto;
         position: relative;
+        background: none;
   }
+
+  .mfp-img-mobile .mfp-bottom-bar {
+    background: none;
+    bottom: 0;
+    margin: auto;
+    top: auto;
+    padding: 0 1em;
+    position: relative  ;
+    box-sizing: border-box; }
 
   .mfp-title{
     text-align: center;
     margin-top: 3em;
+    padding: 0;
+  }
+
+  .mfp-figure:after{
+    background: none;
+    box-shadow: none;
+  }
+
+  img.mfp-img{
+    width: 90%;
+    padding: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   }
 
 @media (min-width: 375px) {
@@ -97,18 +119,11 @@ input {
         margin-top: 4em;
       }
 
-
       img.mfp-img{
         width: 60%;
         padding: 0;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
       }
 
-
-      .mfp-figure:after{
-        background: none;
-        box-shadow: none;
-      }
     }
 
   @media (min-width: 980px) {
