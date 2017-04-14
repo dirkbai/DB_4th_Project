@@ -2,26 +2,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #384047;
+  overflow-y: scroll;
 }
 
-/* Search Form*/
+/* ====================Search Form===================*/
 
 form {
   max-width: 400px;
   margin: auto;
   padding: 0 1em;
-}
-
-.Photos_wrapper {
-  max-width: 980px;
-  margin: auto;
-  padding: 0 1em;
-}
-
-.Photos{
-  width: 100%;
-  border-radius: 3px;
-  margin-bottom: 3em;
 }
 
 input {
@@ -54,6 +43,38 @@ input {
   input:focus:-ms-input-placeholder,
   textarea:focus::-moz-placeholder { color:transparent; }
 
+
+  /* ====================Photos===================*/
+
+  .Photos_wrapper {
+    max-width: 980px;
+    margin: auto;
+    padding: 0 1em;
+  }
+
+  .Photos{
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 3em;
+  }
+
+  /* ====================Light Box ===================*/
+
+  .mfp-counter{
+    display: none;
+  }
+
+  .mfp-bottom-bar{
+        max-width: 600px;
+        margin: auto;
+        position: relative;
+  }
+
+  .mfp-title{
+    text-align: center;
+    margin-top: 3em;
+  }
+
 @media (min-width: 375px) {
 
     .Photos{
@@ -71,6 +92,23 @@ input {
         margin: 0 4% 3em 4%;
       }
 
+      .mfp-title{
+
+        margin-top: 4em;
+      }
+
+
+      img.mfp-img{
+        width: 60%;
+        padding: 0;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+      }
+
+
+      .mfp-figure:after{
+        background: none;
+        box-shadow: none;
+      }
     }
 
   @media (min-width: 980px) {
